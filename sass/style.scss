@@ -1,0 +1,88 @@
+/* Global*/
+
+*, *::befor, *::after {
+    box-sizing: border-box;
+}
+
+/* Variable */
+/*
+$font-header: 'Inconsolata', monospace;
+$font-text: 'Signika', sans-serif;
+*/
+$color-one: #0097e6; /* blue*/
+$color-two: #e9d30f; /* green */
+$color-three: #ff5252; /* red */
+$color-four: #ffffff;  /* white */
+$color-text-one: #2c2c54; /* navy blue*/
+$color-text-two: #ffffff; /* white */
+
+$transition: all 1s;
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+   /* font-family: $font-header;*/
+    color: $color-text-two;
+    background-image: url(https://i.postimg.cc/DfPvbbJM/pexels-photography-maghradze-ph-3764958-1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 120px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    text-align: left;
+}
+
+.buttons {
+    position: relative;
+    text-align: end;
+    left: -5%;
+}
+i {
+    position: relative;
+    left: 75%;
+    bottom: 5%;
+    font-size: 50px;
+    color: $color-two;
+    text-shadow: $color-four 1px 1px;
+}
+
+h1 {
+    font-size: 28px;
+    text-shadow: $color-two 1px 1px;
+}
+h2 {
+    font-size: 24px;
+    text-shadow: $color-two 1px 1px;
+}
+p {
+    font-size: 18px;
+    text-shadow: $color-two 1px 1px;
+}
+.messages {
+    text-align: center;
+    color: $color-two;
+    text-shadow: $color-text-one 1px 1px;
+    font-size: xx-large;
+    font-weight: 700;
+    position: relative;
+    top: 20%;
+}
+button {
+    font-size: 20px;
+    background-color: $color-two;
+    color: $color-text-two;
+    border-radius: 5px;
+}
+button:hover {
+    color: $color-two;
+    background-color: $color-four;
+    cursor: pointer;
+}
