@@ -3,18 +3,15 @@ const buttonTest = document.getElementById('button-test'),
 buttonRock = document.getElementById('button-rock'),
 buttonPaper = document.getElementById('button-paper'),
 buttonScissors = document.getElementById('button-scissors');
-/**
- * Describe this function...
- */
+
+// The function will trigger actions when the button is clicked ....
+
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  
+// The function randomizes the movement of the computer ...  
 
-/**
- * Describe this function...
- */
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
@@ -29,9 +26,8 @@ function getMoveName(argMoveId) {
   }
 }
 
-/**
- * Describe this function...
- */
+// The function compares the player's and computer's moves and determines the result
+
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
