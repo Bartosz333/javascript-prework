@@ -1,9 +1,7 @@
 
-const argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
-
-buttonTest = document.getElementById('button-test');
-buttonRock = document.getElementById('button-rock');
-buttonPaper = document.getElementById('button-paper');
+const buttonTest = document.getElementById('button-test'),
+buttonRock = document.getElementById('button-rock'),
+buttonPaper = document.getElementById('button-paper'),
 buttonScissors = document.getElementById('button-scissors');
 /**
  * Describe this function...
