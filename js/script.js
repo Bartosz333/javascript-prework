@@ -10,7 +10,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+  
 
 /**
  * Describe this function...
@@ -47,12 +47,13 @@ function displayResult(argPlayerMove, argComputerMove) {
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
-playerMove = argButtonName;
-console.log('wybór ruchu gracza to: ' + playerInput);
-console.log('ruch gracza to: ' + playerMove);
-randomNumber = Math.floor(Math.random() * 3 + 1);
-console.log('wylosowana liczba to: ' + randomNumber);
+
+const randomNumber = Math.floor(Math.random() * 3 + 1),
 computerMove = getMoveName(randomNumber);
+
+playerMove = argButtonName;
+console.log('ruch gracza to: ' + playerMove);
+console.log('wylosowana liczba to: ' + randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
