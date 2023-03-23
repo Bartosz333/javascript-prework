@@ -1,4 +1,4 @@
-
+'use strict';
 const buttonTest = document.getElementById('button-test'),
 buttonRock = document.getElementById('button-rock'),
 buttonPaper = document.getElementById('button-paper'),
@@ -44,12 +44,13 @@ function displayResult(argPlayerMove, argComputerMove) {
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
-const randomNumber = Math.floor(Math.random() * 3 + 1),
-computerMove = getMoveName(randomNumber);
+let computerMove, playerMove, randomNumber;
 
 playerMove = argButtonName;
-console.log('ruch gracza to: ' + playerMove);
+console.log('ruch gracza to:' + playerMove);
+randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
+computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
