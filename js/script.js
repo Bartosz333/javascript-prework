@@ -1,9 +1,4 @@
 'use strict';
-const buttonTest = document.getElementById('button-test'),
-      buttonRock = document.getElementById('button-rock'),
-      buttonPaper = document.getElementById('button-paper'),
-      buttonScissors = document.getElementById('button-scissors');
-
 // The function will trigger actions when the button is clicked ....
 
 function buttonClicked(argButtonName) {
@@ -54,7 +49,10 @@ console.log('wylosowana liczba to: ' + randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
-
+const buttonRock = document.getElementById('button-rock'),
+      buttonPaper = document.getElementById('button-paper'),
+      buttonScissors = document.getElementById('button-scissors');
+      
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
